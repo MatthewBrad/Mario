@@ -8,16 +8,33 @@
 h1 {
     font-family: 'Press Start 2P', cursive;
     position: absolute;
-    font-size: 50px;
+    font-size: 48px;
     margin-left: 20%;
     margin-top: 150px;
+    letter-spacing: -2px;
 }
-p {
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px; 
+}
+.job-title {
     font-family: 'Press Start 2P', cursive;
     position: absolute;
     font-size: 25px;
-    margin-left: 24%;
+    margin-left: 20%;
     margin-top: 225px; 
+}
+.coin-number {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    font-size: 21px;
+    margin-left: 22.8%;
+    margin-top: 272px;
+}
+p, li {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 30px;  
+    margin-right: 50px;
 }
 
 //sky styling
@@ -28,13 +45,15 @@ p {
 }
 
 //grass styling
-.grass {
-    background-color: blue;
-    width: 100%;
+.grass1 {
     height: 200px;
 }
+.grass {
+    background-color: mediumseagreen;
+    width: 100%;
+}
 .grass2 {
-    height: 400px;
+    padding: 50px;
 }
 
 //road styling
@@ -180,8 +199,8 @@ p {
 .coin {
     position: absolute;
     font-size: 25px;
-    margin-left: 20%;
-    margin-top: 215px;   
+    margin-left: 19.5%;
+    margin-top: 255px;   
     // animation-name: coin-flip;
     // animation-duration: 3s;
     // animation-iteration-count: infinite;
