@@ -1,0 +1,196 @@
+
+.mario-section {
+    background-color: mediumseagreen;
+    overflow: hidden;
+}
+
+//h1 styling
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    font-size: 50px;
+    margin-left: 20%;
+    margin-top: 150px;
+}
+p {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    font-size: 25px;
+    margin-left: 24%;
+    margin-top: 225px; 
+}
+
+//sky styling
+.sky {
+    background-color: lightblue;
+    width: 100%;
+    height: 400px;
+}
+
+//grass styling
+.grass {
+    background-color: mediumseagreen;
+    width: 100%;
+    height: 200px;
+}
+.grass2 {
+    height: 400px;
+}
+
+//road styling
+.road {
+    background-color: grey;
+    width: 100%;
+    height: 300px;
+    border-top: 5px lightgrey solid;
+    border-bottom: 5px lightgrey solid;
+    .line {
+        border-bottom: 5px white dotted;
+        margin-top: 150px;
+    }
+}
+
+//mario styling
+.mario {
+    margin-top: -30px;
+    position: absolute;
+    left: 0px;
+    z-index: 100;
+    overflow: hidden;
+    // animation-name: drive;
+    // animation-duration: 5s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+    animation: drive 5s infinite linear, jump 5s infinite linear;
+}
+
+//keyframes for drive animation
+@keyframes drive {
+    0% {transform: translateX(-200px)}
+    40% {transform: translateX(600px) rotateY(720deg);}
+    50% {transform: translateX(700px) rotateY(0deg);}
+    100% {transform: translateX(2000px);}
+}
+
+//keyframes for the jump
+@keyframes jump {
+    0% {margin-top: -30px;}
+    44% {margin-top: -30px;}
+    45% {margin-top: -60px;}
+    47% {margin-top: -30px;}
+    100% {margin-top: -30px;}
+}
+
+//mushroom styling 
+.mushroom {
+    margin-top: -50px;
+    position: relative;
+    left: 0px;
+    z-index: 100;
+    overflow: hidden;
+    animation: mushroom1 4s infinite linear; 
+}
+
+//keyframes for mushroom
+@keyframes mushroom1 {
+    0% {transform: translateX(-200px);}
+    29% {transform: translateX(400px) rotateZ(-5deg);}
+    30% {transform: translateX(400px) rotateZ(-20deg);}
+    100% {transform: translateX(2000px);}
+}
+
+//banana styling
+.banana {
+    position: absolute;
+    z-index: 0;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+//cloud styling
+.cloud {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    margin-top: 20px;
+    overflow: hidden;
+    opacity: 0.9;
+    // animation-name: wind;
+    // animation-duration: 15s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+    animation: wind 40s infinite linear;
+}
+
+//keyfranes for wind/cloud animation
+@keyframes wind {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-2000px)}
+}
+
+//cloud2 styling
+.cloud2 {
+    position: absolute;
+    right: -200px;
+    z-index: 0;
+    margin-top: 150px;
+    overflow: hidden;
+    // animation-name: wind2;
+    // animation-duration: 15s;
+    // animation-delay: 4s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+    animation: wind2 40s infinite 10s linear;
+}
+
+//keyfranes for wind/cloud animation
+@keyframes wind2 {
+    0% {transform: translateX(0)}
+    100% {transform: translateX(-2200px)}
+}
+
+//tube styling
+.tube {
+    position: absolute;
+    right: 250px;
+    margin-top: -100px;
+}
+
+//plant styling
+.plant {
+    position: absolute;
+    right: 257px;
+    margin-top: -229px;
+    // animation-name: plant-pop;
+    // animation-duration: 10s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
+    // animation-fill-mode: backwards;
+    animation: plant-pop 10s infinite ease-in-out backwards;
+}
+
+//keyfranes for wind/cloud animation
+@keyframes plant-pop {
+    0% {margin-top: -125px;}
+    50% {margin-top: -229px;}
+    100% {margin-top: -125px;}
+}
+
+//coin styling
+.coin {
+    position: absolute;
+    font-size: 25px;
+    margin-left: 20%;
+    margin-top: 215px;   
+    // animation-name: coin-flip;
+    // animation-duration: 3s;
+    // animation-iteration-count: infinite;
+    // animation-iteration-count: linear;
+    animation: coin-flip 3s infinite linear;
+}
+
+//keyfranes for wind/cloud animation
+@keyframes coin-flip {
+    0% {transform: rotateY(00deg)}
+    100% {transform: rotateY(360deg)}
+}
