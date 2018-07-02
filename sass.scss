@@ -8,16 +8,33 @@
 h1 {
     font-family: 'Press Start 2P', cursive;
     position: absolute;
-    font-size: 50px;
+    font-size: 48px;
     margin-left: 20%;
     margin-top: 150px;
+    letter-spacing: -2px;
 }
-p {
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px; 
+}
+.job-title {
     font-family: 'Press Start 2P', cursive;
     position: absolute;
     font-size: 25px;
-    margin-left: 24%;
+    margin-left: 20%;
     margin-top: 225px; 
+}
+.coin-number {
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    font-size: 21px;
+    margin-left: 22.8%;
+    margin-top: 272px;
+}
+p, li {
+    font-family: 'Gamja Flower', cursive;
+    font-size: 30px;  
+    margin-right: 50px;
 }
 
 //sky styling
@@ -28,13 +45,15 @@ p {
 }
 
 //grass styling
-.grass {
-    background-color: blue;
-    width: 100%;
+.grass1 {
     height: 200px;
 }
+.grass {
+    background-color: mediumseagreen;
+    width: 100%;
+}
 .grass2 {
-    height: 400px;
+    padding: 50px;
 }
 
 //road styling
@@ -180,8 +199,8 @@ p {
 .coin {
     position: absolute;
     font-size: 25px;
-    margin-left: 20%;
-    margin-top: 215px;   
+    margin-left: 19.5%;
+    margin-top: 255px;   
     // animation-name: coin-flip;
     // animation-duration: 3s;
     // animation-iteration-count: infinite;
@@ -194,3 +213,98 @@ p {
     0% {transform: rotateY(00deg)}
     100% {transform: rotateY(360deg)}
 }
+
+//Road line 2
+.line2 {
+    border-bottom: 5px white dotted;
+    margin-top: 150px;
+}
+
+//Mushroom two
+.mushroom2 {
+    margin-top: -50px;
+    margin-right: -200px;
+    position: absolute;
+    right: -175px;
+    animation: mushroom2 7s infinite linear; 
+    overflow: hidden;
+}
+
+//keyframes for mushroom2
+@keyframes mushroom2 {
+    0% {transform: translateX(0px)}
+    100% {transform: translateX(-2300px)}
+}
+
+//Mario two
+.mario2 {
+    margin-top: -25px;
+    position: absolute;
+    right: -75px;
+    overflow: hidden;
+    animation: mario2 6s infinite linear;
+    z-index: 50;
+}
+
+//Keyframes fir mario2
+@keyframes mario2 {
+    0% {transform: translateX(0px)}
+    29% {transform: translateX(-450px) rotateZ(0deg);}
+    30% {transform: translateX(-450px) rotateZ(40deg);}
+    60% {transform: translateX(-1500px) rotateZ(40deg);}
+    70% {transform: translateX(-1700px) rotateZ(20deg);}
+    100% {transform: translateX(-2300px)}
+} 
+
+//Star
+.star {
+    position: absolute;
+    z-index: 0;
+    margin-left: 70%;
+    margin-top: 50px;
+}
+
+//Skills section
+.skills-div {
+    float: left;
+}
+
+//Yoshi div
+.yoshi-div {
+    float: right;
+}
+
+.yoshy {
+    padding-right: 700px;
+    padding-top: 100px;
+}
+
+.egg1 {
+    margin-top: -200px;
+    position: absolute;
+    margin-left: -150px;
+}
+
+.egg2 {
+    margin-top: 0px;
+    position: absolute;
+    margin-left: 230px;
+}
+
+.egg3 {
+    margin-left: 335px;
+    margin-top: -40px;
+    position: absolute;
+}
+
+.egg {
+    animation: eggs linear infinite 2s;
+}
+
+//Keyframes fir mario2
+@keyframes eggs {
+    0% {transform: rotateX(0deg)}
+    30% {transform: rotateX(-50deg);}
+    60% {transform: rotateX(0deg);}
+    100% {transform: rotateX(20deg)}
+} 
